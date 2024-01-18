@@ -1,7 +1,7 @@
 const about = document.querySelector('#about')
-const contact = document.querySelector('#contact')
+const download = document.querySelector('#download')
 const aboutContent = document.querySelector('#about-content')
-const contactContent = document.querySelector('#contact-content')
+const downloadContent = document.querySelector('#download-content')
 
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
@@ -22,15 +22,15 @@ about.addEventListener('click', () => {
 })
 
 
-contact.addEventListener('click', () => {
-  const contactBox = new WinBox({
-    title: 'Contact Me',
+download.addEventListener('click', () => {
+  const downloadBox = new WinBox({
+    title: 'Download',
     background: '#00aa00',
     width: '400px',
     height: '400px',
     x: "center",
     y: "center",
-    mount: contactContent,
+    mount: downloadContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },

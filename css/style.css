@@ -34,6 +34,10 @@ h1 {
   color: var(--tilde-color);
 }
 
+.tab-title {
+  color: #ccc
+}
+
 .typewrite > .wrap{
 color: #ccc
 }
@@ -142,7 +146,7 @@ footer {
 
 .dollar:before {
   content: '$';
-  color: #52a563;
+  color: #ccc;
 }
 
  .tab-select:hover {
