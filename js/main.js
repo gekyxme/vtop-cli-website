@@ -1,15 +1,17 @@
 const about = document.querySelector('#about')
 const download = document.querySelector('#download')
+const setup = document.querySelector('#setup')
+const setupContent = document.querySelector('#setup-content')
 const aboutContent = document.querySelector('#about-content')
 const downloadContent = document.querySelector('#download-content')
 
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
-    title: 'About Me',
+    title: 'About',
     //modal: true,
     width: '400px',
     height: '400px',
-    x: "center",
+    x: "100",
     y: "center",
     mount: aboutContent,
     onfocus: function () {
@@ -29,8 +31,26 @@ download.addEventListener('click', () => {
     width: '400px',
     height: '400px',
     x: "center",
-    y: "center",
+    y: "325",
     mount: downloadContent,
+    onfocus: function () {
+      this.setBackground('#00aa00')
+    },
+    onblur: function () {
+      this.setBackground('#777')
+    },
+  })
+})
+
+setup.addEventListener('click', () => {
+  const setupBox = new WinBox({
+    title: 'Setup',
+    background: '#00aa00',
+    width: '400px',
+    height: '400px',
+    x: "1050",
+    y: "center",
+    mount: setupContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
