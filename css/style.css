@@ -151,3 +151,7 @@ footer {
  .tab-select:hover {
   color: white;
 }
+
+code {
+  color: #0f0
+}
