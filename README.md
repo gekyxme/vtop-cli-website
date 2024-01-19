@@ -39,22 +39,32 @@ Make sure you have the following installed on your machine:
 
 3. Update the `latest.json` file with the new version numbers **only for the OS's for which your update applies** (Do not add new values, update the existing version numbers with the newer ones)
 
-4. Push the changes to your fork on GitHub:
-   ```bash
-   git add .
-   git commit -m "commit_name"
-   git push
-   ```
-5. Make a Pull Request to get your changes reviewed and finally, merged.
+## Once the build files have been added, you need to commit, push these changes and create a pull request
 
-   1. Go to your forked repository on GitHub.
+These instructions will help you make a request to modify the repository with your new build files.
 
-   2. Open the Pull Requests tab on the top of the page.
+### Push the changes to your fork on GitHub:
 
-   3. Click on the `New pull request` button.
+1. Open your terminal.
+2. Navigate to the directory where you cloned your repository
+3. Commit and push the changes that you have made:
 
-   4. Review your changes and click "Create pull request."
+```bash
+git add .
+git commit -m "commit_name"
+git push
+```
 
-   5. Add a title and description to your pull request, then click "Create pull request."
+### Make a pull request to get your changes reviewed and finally, merged.
 
-   6. Your changes are now proposed to be merged into the original repository. The project maintainer will review and merge your changes.
+1.  Go to your forked repository on GitHub.
+
+2.  Open the Pull Requests tab on the top of the page.
+
+3.  Click on the `New pull request` button.
+
+4.  Review your changes and click "Create pull request."
+
+5.  Add a title and description to your pull request, then click "Create pull request."
+
+6.  Your changes are now proposed to be merged into the original repository. The project maintainer will review and merge your changes.
