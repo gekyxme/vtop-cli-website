@@ -85,6 +85,7 @@ nav ul {
 nav ul li {
   color: var(--text-color);
   cursor: pointer;
+  padding: 0px 5px;
 }
 
 .container {
@@ -154,4 +155,34 @@ footer {
 
 code {
   color: #0f0
+}
+
+
+
+.wb-body::-webkit-scrollbar {
+  width: 0.75em;  
+}
+.wb-body::-webkit-scrollbar-track {
+  background-color: rgb(47, 47, 47);
+  border-radius: 100vw;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+.wb-body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border: .2em solid rgb(47, 47, 47);
+  border-radius: 100vw;
+}
+.wb-body::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  main h1 {
+    font-size: 30px;
+  }
+  .typewrite{
+    font-size: 30px;
+  }
+  
 }
