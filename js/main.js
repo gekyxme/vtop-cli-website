@@ -5,77 +5,103 @@ const setupContent = document.querySelector('#setup-content')
 const aboutContent = document.querySelector('#about-content')
 const downloadContent = document.querySelector('#download-content')
 
-about.addEventListener('click', () => {
-  const isMobile = window.innerWidth < 427;
-  const width = isMobile ? '100%' : '400px';
-  const height = isMobile ? '300px' : '400px';
-  const x = isMobile ? 'center' : ((window.innerWidth / 4 - 200)> 0)? `${window.innerWidth / 4 - 200}px`:'0px';
-  const y = 'center';
+let aboutBoxOpen = false;
+let downloadBoxOpen = false;
+let setupBoxOpen = false;
 
-  const aboutBox = new WinBox({
-    title: 'About',
-    width: width,
-    height: height,
-    x: x,
-    y: y,
-    mount: aboutContent,
-    onfocus: function () {
-      this.setBackground('#00aa00')
-    },
-    onblur: function () {
-      this.setBackground('#777')
-    },
-  });
+about.addEventListener('click', () => {
+  if (!aboutBoxOpen) {
+    aboutBoxOpen = true;
+
+    const isMobile = window.innerWidth < 427;
+    const width = isMobile ? '100%' : '400px';
+    const height = isMobile ? '300px' : '400px';
+    const x = isMobile ? 'center' : ((window.innerWidth / 4 - 200) > 0) ? `${window.innerWidth / 4 - 200}px` : '0px';
+    const y = 'center';
+
+    const aboutBox = new WinBox({
+      title: 'About',
+      width: width,
+      height: height,
+      x: x,
+      y: y,
+      mount: aboutContent,
+      onfocus: function () {
+        this.setBackground('#00aa00')
+      },
+      onblur: function () {
+        this.setBackground('#777');
+      },
+      onclose: function () {
+        aboutBoxOpen = false;
+      },
+    });
+  }
 });
 
 download.addEventListener('click', () => {
-  const isMobile = window.innerWidth < 427;
-  const width = isMobile ? '100%' : '400px';
-  const height = isMobile ? '300px' : '400px';
-  const x = isMobile ? 'center' : 'center';
-  const y = isMobile ? 'center' : '325';
+  if (!downloadBoxOpen) {
+    downloadBoxOpen = true;
+    const isMobile = window.innerWidth < 427;
+    const width = isMobile ? '100%' : '400px';
+    const height = isMobile ? '300px' : '400px';
+    const x = isMobile ? 'center' : 'center';
+    const y = isMobile ? 'center' : '325';
 
-  const downloadBox = new WinBox({
-    title: 'Download',
-    background: '#00aa00',
-    width: width,
-    height: height,
-    x: x,
-    y: y,
-    mount: downloadContent,
-    onfocus: function () {
-      this.setBackground('#00aa00')
-    },
-    onblur: function () {
-      this.setBackground('#777')
-    },
-  });
+    const downloadBox = new WinBox({
+      title: 'Download',
+      background: '#00aa00',
+      width: width,
+      height: height,
+      x: x,
+      y: y,
+      mount: downloadContent,
+      onfocus: function () {
+        this.setBackground('#00aa00')
+      },
+      onblur: function () {
+        this.setBackground('#777');
+      },
+      onclose: function () {
+        downloadBoxOpen = false;
+      },
+    });
+  }
 });
+
+
 
 setup.addEventListener('click', () => {
-  const setupContainer = document.getElementById('setup-content');
-  const isMobile = window.innerWidth < 427;
-  const width = isMobile ? '100%' : '400px';
-  const height = isMobile ? '300px' : '400px';
-  const x = isMobile ? 'center' : (((window.innerWidth - (3 * (window.innerWidth / 4) - 200))) > 400) ? `${3 * (window.innerWidth / 4) - 200}px` : `${(window.innerWidth - 400)}px`;
-  const y = 'center';
+  if (!setupBoxOpen) {
+    setupBoxOpen = true;
+    const setupContainer = document.getElementById('setup-content');
+    const isMobile = window.innerWidth < 427;
+    const width = isMobile ? '100%' : '400px';
+    const height = isMobile ? '300px' : '400px';
+    const x = isMobile ? 'center' : (((window.innerWidth - (3 * (window.innerWidth / 4) - 200))) > 400) ? `${3 * (window.innerWidth / 4) - 200}px` : `${(window.innerWidth - 400)}px`;
+    const y = 'center';
 
-  const setupBox = new WinBox({
-    title: 'Setup',
-    background: '#00aa00',
-    width: width,
-    height: height,
-    x: x,
-    y: y,
-    mount: setupContent,
-    onfocus: function () {
-      this.setBackground('#00aa00')
-    },
-    onblur: function () {
-      this.setBackground('#777')
-    },
-  });
+    const setupBox = new WinBox({
+      title: 'Setup',
+      background: '#00aa00',
+      width: width,
+      height: height,
+      x: x,
+      y: y,
+      mount: setupContent,
+      onfocus: function () {
+        this.setBackground('#00aa00')
+      },
+      onblur: function () {
+        this.setBackground('#777');
+      },
+      onclose: function () {
+        setupBoxOpen = false;
+      },
+    });
+  }
 });
+
 
 
 
