@@ -35,7 +35,7 @@ Make sure you have the following installed on your machine:
    `v1.0.1`
 
 2. Add separate build files in this folder for each of the OS versions for which you have build files with the following syntax:
-   `vtop-cli_<os_name>_v<version_number>.exe`
+   `vtop-cli_<os_name>_v<version_number>.zip`
 
 3. Update the `latest.json` file with the new version numbers **only for the OS's for which your update applies** (Do not add new values, update the existing version numbers with the newer ones)
 
