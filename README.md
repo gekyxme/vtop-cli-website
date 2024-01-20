@@ -1,4 +1,4 @@
-# VTOP-CLI DOWNLOAD WEBSITE
+# VTOP-CLI WEBSITE
 
 A Command Line Interface (CLI) tool for _seamless interaction_ with the student portal, VTOP.
 
