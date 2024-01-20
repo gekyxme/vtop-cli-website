@@ -68,3 +68,8 @@ git push
 5.  Add a title and description to your pull request, then click "Create pull request."
 
 6.  Your changes are now proposed to be merged into the original repository. The project maintainer will review and merge your changes.
+
+# Authors
+
+- [Amritsai](https://github.com/gekyxme)
+- [K.Dhanush Baalaji](https://github.com/Realitylion)
