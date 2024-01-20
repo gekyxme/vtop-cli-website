@@ -1,4 +1,4 @@
-# VTOP-CLI WEBSITE
+# CLI-TOP WEBSITE
 
 A Command Line Interface (CLI) tool for _seamless interaction_ with the student portal, VTOP.
 
@@ -14,7 +14,7 @@ Make sure you have the following installed on your machine:
 
 ### Fork the Repository
 
-1. Open your web browser and go to the [repository](https://github.com/ACM-VIT/vtop-cli-website).
+1. Open your web browser and go to the [repository](https://github.com/ACM-VIT/cli-top-website).
 
 2. Click the "Fork" button in the upper right corner of the page. This will create a copy of the repository in your GitHub account.
 
@@ -35,7 +35,7 @@ Make sure you have the following installed on your machine:
    `v1.0.1`
 
 2. Add separate build files in this folder for each of the OS versions for which you have build files with the following syntax:
-   `vtop-cli_<os_name>_v<version_number>.zip`
+   `cli-top_<os_name>_v<version_number>.zip`
 
 3. Update the `latest.json` file with the new version numbers **only for the OS's for which your update applies** (Do not add new values, update the existing version numbers with the newer ones)
 
