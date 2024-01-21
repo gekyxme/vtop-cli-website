@@ -9,7 +9,6 @@ fetch("../latest.json").then(response => response.json()).then(data => {
     // TODO: Change link to "`https://github.com/ACM-VIT/<cli-top-website>/..." once the repository is made under ACM-VIT organization
     
     windowsAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.windows}/cli-top-windows_v${data.version.windows}.zip`;
-    console.log(windowsAnchorTag.href);
     linuxAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.linux}/cli-top-linux_v${data.version.linux}.zip`;
     macAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.mac}/cli-top-macos_v${data.version.mac}.zip`;
     
