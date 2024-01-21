@@ -68,10 +68,19 @@
         <p>- Edit the 'Path' variable under User variables to include the path to your CLI-TOP folder.</p>
         <p>- Apply changes</p>
       
-        <h4>Linux/MacOS</h4>
+        <h4>Linux</h4>
         <p>- Open a terminal and navigate to the CLI-TOP folder.</p>
         <p>- Modify your shell's profile script to include the CLI-TOP folder in your PATH environment variable.</p>
+        <p>- Apply changes by restarting the terminal.</p>
       
+        <h4>MacOS</h4>
+        <p>a) Modify your shell's profile script(usually .zshrc in the root folder, maybe a hidden file) to include the CLI-TOP folder in your PATH environment variable.</p>
+        <p>b) Try running the command cli-top if you do not see the logo then proceed with the following steps:</p>
+	      <p>- Failure to grant full disk access may result in the Terminal error "Operation not permitted." To resolve this issue, navigate to 	System Preferences > Security & Privacy > Privacy panel, and include Terminal in the Full Disk Access list. If the cli-top 	command still doesn't work then execute the steps that follow</p>
+	      <p>- Check permissions: Use <code>ls -l ./cli-top</code> to view the file's permissions.</p>
+	      <p>- Add execute permission: If the "x" flag is missing, use <code>chmod +x ./cli-top</code> to grant it.</p>
+	      <p>- Remove quarantine flag: Use <code>xattr -d com.apple.quarantine ./cli-top</code> to remove the quarantine flag.</p>
+        
         <p>- Apply changes by restarting the terminal.</p>
         
         <p>Verify the installation by running <code>cli-top</code> in your command line or terminal. The tool should launch successfully.</p>
