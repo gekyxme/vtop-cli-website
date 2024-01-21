@@ -10,7 +10,7 @@ fetch("../latest.json").then(response => response.json()).then(data => {
     
     windowsAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.windows}/cli-top-windows_v${data.version.windows}.zip`;
     linuxAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.linux}/cli-top-linux_v${data.version.linux}.zip`;
-    macAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.mac}/cli-top-mac_v${data.version.mac}.zip`;
+    macAnchorTag.href = `https://github.com/gekyxme/cli-top-website/raw/main/buildFiles/v${data.version.mac}/cli-top-macos_v${data.version.mac}.zip`;
     
     windowsAnchorTag.innerText = `v${data.version.windows}`;
     linuxAnchorTag.innerText = `v${data.version.linux}`;
