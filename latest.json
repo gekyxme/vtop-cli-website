@@ -1,9 +1,4 @@
 {
-    "version": 
-    {
-        "windows": "1.2.0",
-        "linux": "1.2.0",
-        "mac": "1.2.0",
-        "killSwitch" : 0
-    }
+  "version": "2.0.0",
+  "killSwitch": 0
 }
